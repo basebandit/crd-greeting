@@ -1,0 +1,8 @@
+apiVersion: basebandit.io/v1alpha1
+kind: Greeting
+metadata:
+  name: basebandit-greeting
+spec:
+  emailToGreet: code@basebandit.io
+  messageToGreet: Hello
+  replicas: 1
