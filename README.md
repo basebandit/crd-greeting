@@ -14,12 +14,13 @@ Later we will add more functionality, for example if we want our CRDs to work li
 `kubectl apply -f crd-greeting.yaml`
 - Confirm the resource has been successfully created.  
 ```bash
+└──╼ $ k api-resources 
 NAME         SHORTNAMES   APIVERSION                        NAMESPACED   KIND
 ...
 greetings    grt          basebandit.io/v1alpha1            true         Greeting
 ...
 ```
-- Go ahead and now create a resource using our above CRD.
+- Go ahead and now create a resource using our above CRD.  
 `kubectl apply -f test-greeting.yaml`
 - Confirm it is successfully created.  
 ```bash
@@ -35,7 +36,7 @@ basebandit-greeting   19m
 NAME                  AGE
 basebandit-greeting   19m
 ```
-**Note:** You can switch the name resource name *greetings* with any of the names you declared in the CRD spec definition.
+**Note:** You can switch the name resource name *greetings* with any of the names you declared in the CRD spec definition.  
 ![CRD Spec Defintion](./spec-definition.png)
 
 
